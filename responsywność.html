@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="pl PL">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>strona responsywna</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: 'Trebuchet MS';
+        }
+
+        /*ustawianie repsonsywnosci*/
+        @media(min-width: 1200px) {
+
+            /*style wstawione w tym miejscu bedzie mialo zastosowanie kiedy szerowkosc ekranu to minimum 1100px*/
+            header {
+                background: url('tlo.jpg') top center no-repeat;
+                background-size: cover;
+                color: white;
+                float: left;
+                width: 100%;
+                clear: both;
+            }
+
+            #logo {
+                width: auto;
+                height: 100px;
+                padding: 50px 10px 50px 0px;
+                display: block;
+                float: left;
+            }
+
+            #tytul {
+                float: left;
+                font-size: 40px;
+                margin: 70px 0 0 0;
+            }
+
+            .kontener {
+                width: 100%;
+                margin: 0 auto;
+            }
+
+            footer {
+                clear: both;
+                background: #e5e5e5;
+                width: 100%;
+                height: 50px;
+            }
+
+            footer p {
+                display: block;
+                margin: auto;
+                padding: 15px;
+                text-align: center;
+            }
+
+            #menu {
+                float: left;
+                background: #212121;
+                width: 150px;
+                margin: 15px 0 15px 15px;
+            }
+
+            #main {
+                float: left;
+                width: 950px;
+            }
+
+            #menu a {
+                text-decoration: none;
+                color: #000;
+                display: block;
+                background: #f16529;
+                padding: 10px;
+                text-align: center;
+            }
+
+            #menu a:hover {
+                background: #212121;
+                color: #fff;
+            }
+
+            #main h1 {
+                padding: 6px 10px 5px 20px;
+                color: orangered;
+            }
+
+            #main p {
+                padding: 2px 5px 0 20px;
+            }
+        }
+
+        @media only screen and (min-width: 768px) and (max-width:1199px) {
+
+            /*style wstawione w tym miejscu bedzie mialo zastosowanie kiedy szerokosc ekranu to minimum 1000px, a maximum to 1099px*/
+            header {
+                width: 100%;
+                background: url('tlo.jpg') top center no-repeat;
+                background-size: cover;
+                color: white;
+                clear: both;
+                float: left;
+            }
+            #logo{
+                width: auto;
+                height: 100px;
+                padding: 50px 10px 50px 0px;
+                display: block;
+                float: left;
+            }
+            #tytul {
+                float: left;
+                font-size: 40px;
+                margin: 70px 0 0 0;
+            }
+            .kontener {
+                width: 100%;
+                margin: 0 auto;
+            }
+
+            footer {
+                clear: both;
+                background: #e5e5e5;
+                width: 100%;
+                height: 50px;
+            }
+
+            footer p {
+                display: block;
+                margin: auto;
+                padding: 15px;
+                text-align: center;
+            }
+
+            #menu {
+                float: left;
+                background: #212121;
+                width: 150px;
+                margin: 15px 0 15px 3px;
+            }
+            
+            #main {
+                float: left;
+                width: 80%;
+            }
+
+            #menu a {
+                text-decoration: none;
+                color: #000;
+                display: block;
+                background: #f16529;
+                padding: 10px;
+                text-align: center;
+            }
+
+            #menu a:hover {
+                background: #212121;
+                color: #fff;
+            }
+
+            #main h1 {
+                padding: 6px 10px 5px 20px;
+                color: orangered;
+            }
+
+            #main p {
+                padding: 2px 5px 0 20px;
+            }
+        }
+
+        @media only screen and (min-width: 0px) and (max-width: 767px) {
+            /*style wstawione w tym miejscu bedzie mialo zastosowanie kiedy szerowkosc ekranu jest mniesjza od 1000px*/
+            header {
+                width: 100%;
+                background: url('tlo.jpg') top center no-repeat;
+                background-size: cover;
+                color: white;
+                clear: both;
+                float: left;
+            }
+            #logo{
+                width: auto;
+                margin: auto;
+                height: 150px;
+                padding: 50px 10px 50px 0px;
+                display: block;
+                text-align: center;
+            }
+            .kontener {
+                width: 100%;
+                margin: 0 auto;
+            }
+
+            footer {
+                clear: both;
+                background: #e5e5e5;
+                width: 100%;
+                height: 50px;
+            }
+
+            footer p {
+                display: block;
+                margin: auto;
+                padding: 15px;
+                text-align: center;
+            }
+
+            #menu {
+                background: #212121;
+                width: 100%;
+                margin: auto;
+                text-align: center;
+            }
+            
+            #main {
+                display: block;
+                margin: auto;
+                width: 80%;
+            }
+
+            #menu a {
+                text-decoration: none;
+                color: #000;
+                display: block;
+                background: #f16529;
+                padding: 10px;
+                text-align: center;
+            }
+
+            #menu a:hover {
+                background: #212121;
+                color: #fff;
+            }
+
+            #main h1 {
+                padding: 6px 10px 5px 20px;
+                text-align: center;
+                color: orangered;
+            }
+
+            #main p {
+                padding: 2px 5px 0 20px;
+            }
+            #tytul{
+                display: none;
+            }
+        }
+
+    </style>
+
+</head>
+
+<body>
+    <header>
+        <div class="kontener"><img src="logo.png" id="logo" alt="logo">
+            <div id="tytul">tytuł strony</div>
+        </div>
+    </header>
+    <section>
+        <div class="kontener">
+            <div id="menu">
+                <a href="#">start</a>
+                <a href="#">o firmie</a>
+                <a href="#">oferta</a>
+                <a href="#">kontakt</a>
+            </div>
+            <div id="main">
+                <h1>Zapraszamy</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam venenatis sodales fringilla. Pellentesque lacinia erat fringilla viverra tristique. Maecenas non tristique sapien, id scelerisque dolor. Donec faucibus non libero sed finibus. Quisque gravida at erat non commodo. Aenean tincidunt pellentesque sapien, eu eleifend erat malesuada vel. Suspendisse aliquet felis sit amet consequat aliquet. Phasellus tincidunt ante eu nisi auctor faucibus. Nullam mauris lorem, suscipit vel ornare non, pretium nec magna. Etiam viverra ligula et enim tempor, et lobortis nisl lobortis. Duis hendrerit turpis vitae massa sodales, nec vestibulum augue congue. Pellentesque sed augue in turpis faucibus egestas. Maecenas lobortis blandit sem sit amet lacinia. Vestibulum dapibus vulputate leo, ut dignissim sapien lacinia a.</p>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <p>Jakub Zacher</p>
+    </footer>
+</body>
+
+</html>
